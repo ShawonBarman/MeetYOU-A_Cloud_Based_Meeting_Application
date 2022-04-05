@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:active, :hover, :focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    font-weight: 500;
+    background-color: #f2f2f2;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+/* button default css design */
+.main-btn{
+    display: inline-block;
+    border-radius: 26px;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    -ms-border-radius: 26px;
+    -o-border-radius: 26px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    padding: 10px 37px;
+    background-color: rgba(24, 190, 135, 0.89);
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+}
+.main-btn:hover{
+    background-color: rgba(7, 128, 87, 0.89);
+    color: #fff;
+}
+/* end button default css design */
+
+/* header section css coding starting here */
+.header{
+    z-index: 100;
+    background-color: white;
+}
+.header .navbar{
+    padding: 0.8rem 0;
+}
+.header .navbar-brand img{
+    height: 3rem;
+    width: 3rem;
+}
+.header .navbar-brand{
+    color: rgba(24, 190, 135, 0.89);
+    font-weight: bold;
+}
+
+.header .navbar-nav a.nav-link{
+    position: relative;
+    padding: 0.7rem 1rem;
+    color: #777;
+    transition: font-weight 0.3s ease-in-out;
+    -webkit-transition: font-weight 0.3s ease-in-out;
+    -moz-transition: font-weight 0.3s ease-in-out;
+    -ms-transition: font-weight 0.3s ease-in-out;
+    -o-transition: font-weight 0.3s ease-in-out;
+}
+.header .navbar-nav a.nav-link::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 0.15rem;
+    box-sizing: border-box;
+    color: #111;
+    background-color: rgba(26, 211, 149, 0.89);
+    transition: width .5s;
+    -webkit-transition: width .5s;
+    -moz-transition: width .5s;
+    -ms-transition: width .5s;
+    -o-transition: width .5s;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    bottom: 0;
+}
+.header .navbar-nav a.nav-link:hover::after{
+    width: 40%;
+    transition: width .4s;
+    -webkit-transition: width .4s;
+    -moz-transition: width .4s;
+    -ms-transition: width .4s;
+    -o-transition: width .4s;
+}
+/* header section css coding end here */
+
+/* banner section css coding starting here */
+section{
+    padding: 80px 0;
+}
+/* .banner .heading h1{
+    font-size: 2.5rem;
+} */
+.banner .carousel-inner{
+    border-radius: 0 0 5rem;
+    -webkit-border-radius: 0 0 5rem;
+    -moz-border-radius: 0 0 5rem;
+    -ms-border-radius: 0 0 5rem;
+    -o-border-radius: 0 0 5rem;
+}
+.banner .carousel-indicators{
+    margin-bottom: -3rem;
+}
+.banner .carousel-indicators [data-bs-target]{
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgba(24, 190, 135, 0.89);
+    margin-left: 10px;
+}
+.banner input{
+    padding: 6px 20px;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    border: 1px solid #837e7e;
+}
+.banner .kd{
+    position: relative;
+    right: 230px;
+}
+/* banner section css coding end here */
+
+/* about section css coding starting here */
+.about_wrapper .card, .about_wrapper .card{
+    width: 90%;
+}
+.about_wrapper .card, .about_wrapper .card img{
+    border-radius: 0.625rem;
+    -webkit-border-radius: 0.625rem;
+    -moz-border-radius: 0.625rem;
+    -ms-border-radius: 0.625rem;
+    -o-border-radius: 0.625rem;
+}
+.about_wrapper .text-sec{
+    text-align: end;
+}
+.about_wrapper .text-sec hr{
+    color: rgba(7, 128, 87, 0.89);
+    border: 2px solid rgba(7, 128, 87, 0.89);
+}
+/* about section css coding end here */
+
+/* footer section css code starting here */
+.footer_wrapper{
+    background-color: rgba(7, 128, 87, 0.89);
+    padding: 20px 0;
+}
+.footer_wrapper .footer-logo img{
+    width: 50px;
+}
+.footer_wrapper .footer-logo span{
+    font-weight: bold;
+    color: #fff;
+}
+.footer_wrapper .social-icon li{
+    margin: 6px;
+}
+.footer_wrapper .social-icon li a{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    display: inline-block;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    transition: all .3s cubic-bezier(0.645, 0.045, 0.335, 1);
+    -webkit-transition: all .3s cubic-bezier(0.645, 0.045, 0.335, 1);
+    -moz-transition: all .3s cubic-bezier(0.645, 0.045, 0.335, 1);
+    -ms-transition: all .3s cubic-bezier(0.645, 0.045, 0.335, 1);
+    -o-transition: all .3s cubic-bezier(0.645, 0.045, 0.335, 1);
+}
+.footer_wrapper .social-icon li a:hover{
+    background-color: rgb(10, 196, 134);
+    border-color: rgb(10, 196, 134);
+    color: #fff;
+    box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+}
+.footer_wrapper .copyright-text p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.footer_wrapper .copyright-text p a{
+    color: rgb(15, 252, 173);
+}
+/* footer section css code end here */
+
+/* banner section css coding starting here */
+/* banner section css coding end here */
+
+/* banner section css coding starting here */
+/* banner section css coding end here */
